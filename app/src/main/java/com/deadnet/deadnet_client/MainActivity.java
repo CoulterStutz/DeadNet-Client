@@ -126,21 +126,21 @@ public class MainActivity extends AppCompatActivity {
         }, 4000);
         new Handler().postDelayed(() -> {
             CopAlert();
-        }, 10000);
+        }, 6000);
         new Handler().postDelayed(() -> {
             ConstructionAlert();
-        }, 14000);
+        }, 9000);
         new Handler().postDelayed(() -> {
             HazardAlert();
-        }, 17000);
+        }, 12000);
         new Handler().postDelayed(() -> {
             RouteChangeAlert();
-        }, 110000);
+        }, 15000);
         new Handler().postDelayed(() -> {
             DisconnectedAlert();
-        }, 113000);
+        }, 18000);
         new Handler().postDelayed(() -> {
             ReconnectedAlert();
-        }, 20000);
+        }, 40000);
     }
 }
