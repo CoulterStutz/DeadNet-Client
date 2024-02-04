@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 // Update the progress value
-                LoadingValue += 10;
                 if (LoadingValue <= 100) {
                     // Set the new progress value
                     progressBar.setProgress(LoadingValue);
@@ -106,6 +105,22 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             setContentView(R.layout.activity_main);
         }, 5000);
+        new Handler().postDelayed(() -> {
+            LoadingValue += 25;
+            UpdateLoadingBar(findViewById(R.id.LoadingBar));
+        }, 1000);
+        new Handler().postDelayed(() -> {
+            LoadingValue += 25;
+            UpdateLoadingBar(findViewById(R.id.LoadingBar));
+        }, 2000);
+        new Handler().postDelayed(() -> {
+            LoadingValue += 25;
+            UpdateLoadingBar(findViewById(R.id.LoadingBar));
+        }, 3000);
+        new Handler().postDelayed(() -> {
+            LoadingValue += 25;
+            UpdateLoadingBar(findViewById(R.id.LoadingBar));
+        }, 4000);
         new Handler().postDelayed(() -> {
             CopAlert();
         }, 10000);
