@@ -261,7 +261,7 @@
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/glitch_goblin"
             android:text="Route Change"
-            android:textColor="#FF9800"
+            android:textColor="#00BCD4"
             android:textSize="16sp" />
 
         <TextView
