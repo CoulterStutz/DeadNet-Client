@@ -7,7 +7,7 @@
     android:background="@color/d_111">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/LoadingText"
         android:layout_width="330dp"
         android:layout_height="63dp"
         android:fontFamily="@font/glitch_goblin"
@@ -18,22 +18,23 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         android:textSize="55dp"
-        app:layout_constraintBottom_toTopOf="@+id/progressBar2"
+        app:layout_constraintBottom_toTopOf="@+id/LoadingBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ProgressBar
-        android:id="@+id/progressBar2"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="121dp"
-        android:layout_height="127dp"
+        android:id="@+id/LoadingBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="349dp"
+        android:layout_height="153dp"
         android:max="100"
-        android:progress="100"
-        android:progressTint="#4CAF50"
+        android:progress="50"
+        android:progressTint="#00FF0A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/LoadingText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
