@@ -63,7 +63,10 @@ public class MainActivity extends AppCompatActivity {
             HazardAlert();
         }, 3000);
         new Handler().postDelayed(() -> {
-            DisconnectedAlert();
+            RouteChangeAlert();
         }, 4000);
+        new Handler().postDelayed(() -> {
+            DisconnectedAlert();
+        }, 5000);
     }
 }
