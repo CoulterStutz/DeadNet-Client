@@ -35,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
         animator.start();
     }
 
+    void RouteChangeAlert(){
+        routeChangeView = findViewById(R.id.RoadHazardView);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(routeChangeView, "translationY", 100f);
+        animator.setDuration(500); // Adjust the duration as needed
+        animator.start();
+    }
+
     void DisconnectedAlert(){
         disconnectedView = findViewById(R.id.DisconnectedView);
         ObjectAnimator animator = ObjectAnimator.ofFloat(disconnectedView, "translationY", 100f);
