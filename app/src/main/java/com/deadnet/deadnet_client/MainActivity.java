@@ -19,6 +19,12 @@ public class MainActivity extends AppCompatActivity {
         ObjectAnimator animator = ObjectAnimator.ofFloat(copView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
+
+        new Handler().postDelayed(() -> {
+            ObjectAnimator reverseAnimator = ObjectAnimator.ofFloat(copView, "translationY", -300f);
+            reverseAnimator.setDuration(500); // Adjust the duration as needed
+            reverseAnimator.start();
+        }, 2000); // Delay for 2 seconds
     }
 
     void ConstructionAlert(){
@@ -26,6 +32,12 @@ public class MainActivity extends AppCompatActivity {
         ObjectAnimator animator = ObjectAnimator.ofFloat(constructionView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
+
+        new Handler().postDelayed(() -> {
+            ObjectAnimator reverseAnimator = ObjectAnimator.ofFloat(constructionView, "translationY", -300f);
+            reverseAnimator.setDuration(500); // Adjust the duration as needed
+            reverseAnimator.start();
+        }, 2000); // Delay for 2 seconds
     }
 
     void HazardAlert(){
@@ -33,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
         ObjectAnimator animator = ObjectAnimator.ofFloat(hazardView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
+
+        new Handler().postDelayed(() -> {
+            ObjectAnimator reverseAnimator = ObjectAnimator.ofFloat(hazardView, "translationY", -300f);
+            reverseAnimator.setDuration(500); // Adjust the duration as needed
+            reverseAnimator.start();
+        }, 2000); // Delay for 2 seconds
     }
 
     void RouteChangeAlert(){
@@ -40,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
         ObjectAnimator animator = ObjectAnimator.ofFloat(routeChangeView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
+
+        new Handler().postDelayed(() -> {
+            ObjectAnimator reverseAnimator = ObjectAnimator.ofFloat(routeChangeView, "translationY", -300f);
+            reverseAnimator.setDuration(500); // Adjust the duration as needed
+            reverseAnimator.start();
+        }, 2000); // Delay for 2 seconds
     }
 
     void DisconnectedAlert(){
@@ -47,6 +71,12 @@ public class MainActivity extends AppCompatActivity {
         ObjectAnimator animator = ObjectAnimator.ofFloat(disconnectedView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
+
+        new Handler().postDelayed(() -> {
+            ObjectAnimator reverseAnimator = ObjectAnimator.ofFloat(disconnectedView, "translationY", -300f);
+            reverseAnimator.setDuration(500); // Adjust the duration as needed
+            reverseAnimator.start();
+        }, 2000); // Delay for 2 seconds
     }
 
     @Override
