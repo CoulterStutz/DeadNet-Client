@@ -9,11 +9,11 @@ import android.os.Handler;
 import android.widget.ProgressBar;
 
 public class MainActivity extends AppCompatActivity {
-    private CardView copView;
-    private CardView constructionView;
-    private CardView hazardView;
-    private CardView routeChangeView;
-    private CardView disconnectedView;
+    private CardView copView = findViewById(R.id.CopView);;
+    private CardView constructionView = findViewById(R.id.ConstructionView);;
+    private CardView hazardView = findViewById(R.id.RoadHazardView);;
+    private CardView routeChangeView = findViewById(R.id.RouteChangeView);;
+    private CardView disconnectedView = findViewById(R.id.DisconnectedView);;
 
     private ProgressBar loadingBar = findViewById(R.id.LoadingBar);
     private int LoadingValue = 0;
