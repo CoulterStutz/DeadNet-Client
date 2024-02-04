@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     private CardView hazardView;
     private CardView routeChangeView;
     private CardView disconnectedView;
+
+    private ProgressBar loadingBar = findViewById(R.id.LoadingBar);
     private int LoadingValue = 0;
 
     private void UpdateLoadingBar(ProgressBar progressBar) {
@@ -102,24 +104,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loading);
+
+
+
         new Handler().postDelayed(() -> {
             setContentView(R.layout.activity_main);
         }, 5000);
         new Handler().postDelayed(() -> {
             LoadingValue += 25;
-            UpdateLoadingBar(findViewById(R.id.LoadingBar));
+            UpdateLoadingBar();
         }, 1000);
         new Handler().postDelayed(() -> {
             LoadingValue += 25;
-            UpdateLoadingBar(findViewById(R.id.LoadingBar));
+            UpdateLoadingBar();
         }, 2000);
         new Handler().postDelayed(() -> {
             LoadingValue += 25;
-            UpdateLoadingBar(findViewById(R.id.LoadingBar));
+            UpdateLoadingBar();
         }, 3000);
         new Handler().postDelayed(() -> {
             LoadingValue += 25;
-            UpdateLoadingBar(findViewById(R.id.LoadingBar));
+            UpdateLoadingBar();
         }, 4000);
         new Handler().postDelayed(() -> {
             CopAlert();
