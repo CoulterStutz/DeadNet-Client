@@ -304,4 +304,38 @@
             android:translationX="200dp" />
     </androidx.cardview.widget.CardView>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/DisconnectedView"
+        android:layout_width="277dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center_horizontal"
+        android:translationY="320dp"
+        app:cardBackgroundColor="@color/d3xdcop_background"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/DisconnectedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/glitch_goblin"
+            android:text="Disconnected!"
+            android:textColor="#00BCD4"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:translationX="10dp" />
+
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
