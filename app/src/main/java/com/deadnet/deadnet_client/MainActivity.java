@@ -62,6 +62,19 @@ public class MainActivity extends AppCompatActivity {
         }, 2000); // Delay for 2 seconds
     }
 
+    void UndercoverAlert(){
+        undercoverCopView = findViewById(R.id.UndercoverAlert);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(undercoverCopView, "translationY", 100f);
+        animator.setDuration(500); // Adjust the duration as needed
+        animator.start();
+
+        new Handler().postDelayed(() -> {
+            ObjectAnimator reverseAnimator = ObjectAnimator.ofFloat(undercoverCopView, "translationY", -300f);
+            reverseAnimator.setDuration(500); // Adjust the duration as needed
+            reverseAnimator.start();
+        }, 2000); // Delay for 2 seconds
+    }
+
     void ConstructionAlert(){
         constructionView = findViewById(R.id.ConstructionView);
         ObjectAnimator animator = ObjectAnimator.ofFloat(constructionView, "translationY", 100f);
