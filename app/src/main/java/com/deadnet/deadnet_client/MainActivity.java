@@ -49,5 +49,14 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             CopAlert();
         }, 1000);
+        new Handler().postDelayed(() -> {
+            ConstructionAlert();
+        }, 2000);
+        new Handler().postDelayed(() -> {
+            HazardAlert();
+        }, 3000);
+        new Handler().postDelayed(() -> {
+            DisconnectedAlert();
+        }, 4000);
     }
 }
