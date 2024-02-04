@@ -173,6 +173,6 @@ public class MainActivity extends AppCompatActivity {
         }, 21000);
         new Handler().postDelayed(() -> {
             ReconnectedAlert();
-        }, 41000);
+        }, 31000);
     }
 }
