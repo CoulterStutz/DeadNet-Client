@@ -368,6 +368,48 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/WelcomeView"
+        android:layout_width="277dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center_horizontal"
+        android:translationY="500dp"
+        app:cardBackgroundColor="@color/d3xdcop_background"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/WelcomeICO"
+            android:layout_width="81dp"
+            android:layout_height="match_parent"
+            android:scaleX="1.4"
+            android:scaleY="1.4"
+            app:srcCompat="@mipmap/d3xdmap_foreground" />
+
+        <TextView
+            android:id="@+id/WelcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/glitch_goblin"
+            android:text="Welcome!"
+            android:textColor="#673AB7"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/WelcomeUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="DriverNAME"
+            android:textColor="#2196F3"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
         android:id="@+id/DisconnectedView"
         android:layout_width="277dp"
         android:layout_height="69dp"
@@ -400,5 +442,6 @@
             android:translationX="10dp" />
 
     </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
