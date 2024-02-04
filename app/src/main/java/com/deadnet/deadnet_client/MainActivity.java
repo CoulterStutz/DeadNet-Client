@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     void CopAlert(){
         copView = findViewById(R.id.CopView);
-        ObjectAnimator animator = ObjectAnimator.ofFloat(copView, "translationY", 0f);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(copView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
     }
