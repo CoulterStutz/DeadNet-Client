@@ -51,7 +51,7 @@
         android:layout_height="69dp"
         android:layout_marginTop="16dp"
         android:foregroundGravity="center_horizontal"
-        android:translationY="500dp"
+        android:translationY="-500dp"
         app:cardBackgroundColor="@color/d3xdcop_background"
         app:cardCornerRadius="50dp"
         app:cardElevation="10dp"
