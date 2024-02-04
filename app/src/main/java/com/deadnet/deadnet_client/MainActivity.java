@@ -35,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
         animator.start();
     }
 
+    void DisconnectedAlert(){
+        DisconnectedView = findViewById(R.id.DisconnectedView);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(copView, "translationY", 100f);
+        animator.setDuration(500); // Adjust the duration as needed
+        animator.start();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
