@@ -175,7 +175,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/RoadHazard"
+        android:id="@+id/RoadHazardView"
         android:layout_width="277dp"
         android:layout_height="69dp"
         android:layout_marginTop="16dp"
