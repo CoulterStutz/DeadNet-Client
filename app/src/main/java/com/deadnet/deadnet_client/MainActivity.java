@@ -82,22 +82,25 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_loading);
+        new Handler().postDelayed(() -> {
+            setContentView(R.layout.activity_main);
+        }, 5000);
         new Handler().postDelayed(() -> {
             CopAlert();
-        }, 1000);
-        new Handler().postDelayed(() -> {
-            ConstructionAlert();
-        }, 4000);
-        new Handler().postDelayed(() -> {
-            HazardAlert();
-        }, 7000);
-        new Handler().postDelayed(() -> {
-            RouteChangeAlert();
         }, 10000);
         new Handler().postDelayed(() -> {
+            ConstructionAlert();
+        }, 14000);
+        new Handler().postDelayed(() -> {
+            HazardAlert();
+        }, 17000);
+        new Handler().postDelayed(() -> {
+            RouteChangeAlert();
+        }, 110000);
+        new Handler().postDelayed(() -> {
             DisconnectedAlert();
-        }, 13000);
+        }, 113000);
         new Handler().postDelayed(() -> {
             ReconnectedAlert();
         }, 20000);
