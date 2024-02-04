@@ -154,22 +154,25 @@ public class MainActivity extends AppCompatActivity {
             UpdateLoadingBar(findViewById(R.id.LoadingBar));
         }, 4000);
         new Handler().postDelayed(() -> {
-            CopAlert();
+            WelcomeAlert();
         }, 6000);
         new Handler().postDelayed(() -> {
-            ConstructionAlert();
+            CopAlert();
         }, 9000);
         new Handler().postDelayed(() -> {
-            HazardAlert();
+            ConstructionAlert();
         }, 12000);
         new Handler().postDelayed(() -> {
-            RouteChangeAlert();
+            HazardAlert();
         }, 15000);
         new Handler().postDelayed(() -> {
-            DisconnectedAlert();
+            RouteChangeAlert();
         }, 18000);
         new Handler().postDelayed(() -> {
+            DisconnectedAlert();
+        }, 21000);
+        new Handler().postDelayed(() -> {
             ReconnectedAlert();
-        }, 40000);
+        }, 41000);
     }
 }
