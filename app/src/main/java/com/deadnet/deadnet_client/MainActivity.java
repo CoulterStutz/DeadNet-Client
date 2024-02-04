@@ -36,6 +36,19 @@ public class MainActivity extends AppCompatActivity {
         }, 1000); // Start updating after 1 second
     }
 
+    void WelcomeAlert(){
+        welcomeAlert = findViewById(R.id.WelcomeView);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(welcomeAlert, "translationY", 100f);
+        animator.setDuration(500); // Adjust the duration as needed
+        animator.start();
+
+        new Handler().postDelayed(() -> {
+            ObjectAnimator reverseAnimator = ObjectAnimator.ofFloat(welcomeAlert, "translationY", -300f);
+            reverseAnimator.setDuration(500); // Adjust the duration as needed
+            reverseAnimator.start();
+        }, 2000); // Delay for 2 seconds
+    }
+
     void CopAlert(){
         copView = findViewById(R.id.CopView);
         ObjectAnimator animator = ObjectAnimator.ofFloat(copView, "translationY", 100f);
