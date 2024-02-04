@@ -9,10 +9,10 @@ import android.os.Handler;
 
 public class MainActivity extends AppCompatActivity {
     private CardView copView;
-    private Cardview constructionView;
-    private Cardview hazardView;
-    private Cardview routeChangeView;
-    private Cardview disconnectedView;
+    private CardView constructionView;
+    private CardView hazardView;
+    private CardView routeChangeView;
+    private CardView disconnectedView;
 
     void CopAlert(){
         copView = findViewById(R.id.CopView);
