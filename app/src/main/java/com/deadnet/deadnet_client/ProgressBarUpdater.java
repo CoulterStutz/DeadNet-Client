@@ -5,7 +5,8 @@ import android.widget.ProgressBar;
 
 public class ProgressBarUpdater {
     int progressValue;
-    private void updateProgressBar(ProgressBar progressBar) {
+    ProgressBar progressBar;
+    private void updateProgressBar() {
         // Create a handler to update the progress every second
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
