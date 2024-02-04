@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void CopAlert(){
-        copView = findViewById(R.id.CopView);
         ObjectAnimator animator = ObjectAnimator.ofFloat(copView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
@@ -49,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void ConstructionAlert(){
-        constructionView = findViewById(R.id.ConstructionView);
         ObjectAnimator animator = ObjectAnimator.ofFloat(constructionView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
@@ -62,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void HazardAlert(){
-        hazardView = findViewById(R.id.RoadHazardView);
         ObjectAnimator animator = ObjectAnimator.ofFloat(hazardView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
@@ -75,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void RouteChangeAlert(){
-        routeChangeView = findViewById(R.id.RouteChangeView);
         ObjectAnimator animator = ObjectAnimator.ofFloat(routeChangeView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
@@ -88,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void DisconnectedAlert(){
-        disconnectedView = findViewById(R.id.DisconnectedView);
         ObjectAnimator animator = ObjectAnimator.ofFloat(disconnectedView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
@@ -104,8 +99,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loading);
-
-
 
         new Handler().postDelayed(() -> {
             setContentView(R.layout.activity_main);
