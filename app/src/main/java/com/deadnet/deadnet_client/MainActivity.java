@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void RouteChangeAlert(){
-        routeChangeView = findViewById(R.id.RoadHazardView);
+        routeChangeView = findViewById(R.id.RouteChangeView);
         ObjectAnimator animator = ObjectAnimator.ofFloat(routeChangeView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
