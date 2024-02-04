@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.ProgressBar;
 
 public class MainActivity extends AppCompatActivity {
     private CardView copView;
@@ -13,6 +14,25 @@ public class MainActivity extends AppCompatActivity {
     private CardView hazardView;
     private CardView routeChangeView;
     private CardView disconnectedView;
+    private int LoadingValue = 0;
+
+    private void UpdateLoadingBar(ProgressBar progressBar) {
+        // Create a handler to update the progress every second
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // Update the progress value
+                LoadingValue += 10;
+                if (LoadingValue <= 100) {
+                    // Set the new progress value
+                    progressBar.setProgress(LoadingValue);
+                    // Call the method again after 1 second
+                    handler.postDelayed(this, 1000);
+                }
+            }
+        }, 1000); // Start updating after 1 second
+    }
 
     void CopAlert(){
         copView = findViewById(R.id.CopView);
