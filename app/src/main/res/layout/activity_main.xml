@@ -54,7 +54,7 @@
         android:translationY="-500dp"
         app:cardBackgroundColor="@color/d3xdcop_background"
         app:cardCornerRadius="50dp"
-        app:cardElevation="50dp"
+        app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -117,7 +117,7 @@
         android:translationY="-500dp"
         app:cardBackgroundColor="@color/d3xdcop_background"
         app:cardCornerRadius="50dp"
-        app:cardElevation="50dp"
+        app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -183,7 +183,7 @@
         android:translationY="-500dp"
         app:cardBackgroundColor="@color/d3xdcop_background"
         app:cardCornerRadius="50dp"
-        app:cardElevation="50dp"
+        app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -248,7 +248,7 @@
         android:translationY="-500dp"
         app:cardBackgroundColor="@color/d3xdcop_background"
         app:cardCornerRadius="50dp"
-        app:cardElevation="50dp"
+        app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -313,7 +313,7 @@
         android:translationY="-500dp"
         app:cardBackgroundColor="@color/d3xdcop_background"
         app:cardCornerRadius="50dp"
-        app:cardElevation="50dp"
+        app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
