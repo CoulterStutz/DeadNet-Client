@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar loadingBar = findViewById(R.id.LoadingBar);
     private int LoadingValue = 0;
 
-    private void UpdateLoadingBar(ProgressBar progressBar) {
+    private void UpdateLoadingBar() {
         // Create a handler to update the progress every second
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 // Update the progress value
                 if (LoadingValue <= 100) {
                     // Set the new progress value
-                    progressBar.setProgress(LoadingValue);
+                    loadingBar.setProgress(LoadingValue);
                     // Call the method again after 1 second
                     handler.postDelayed(this, 1000);
                 }
