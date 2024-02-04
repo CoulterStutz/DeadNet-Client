@@ -10,9 +10,9 @@ import android.os.Handler;
 public class MainActivity extends AppCompatActivity {
     private CardView copView;
     private Cardview constructionView;
-    private Cardview HazardView;
-    private Cardview RouteChangeView;
-    private Cardview DisconnectedView;
+    private Cardview hazardView;
+    private Cardview routeChangeView;
+    private Cardview disconnectedView;
 
     void CopAlert(){
         copView = findViewById(R.id.CopView);
@@ -23,21 +23,21 @@ public class MainActivity extends AppCompatActivity {
 
     void ConstructionAlert(){
         constructionView = findViewById(R.id.ConstructionView);
-        ObjectAnimator animator = ObjectAnimator.ofFloat(copView, "translationY", 100f);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(constructionView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
     }
 
     void HazardAlert(){
-        HazardView = findViewById(R.id.RoadHazardView);
-        ObjectAnimator animator = ObjectAnimator.ofFloat(copView, "translationY", 100f);
+        hazardView = findViewById(R.id.RoadHazardView);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(hazardView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
     }
 
     void DisconnectedAlert(){
-        DisconnectedView = findViewById(R.id.DisconnectedView);
-        ObjectAnimator animator = ObjectAnimator.ofFloat(copView, "translationY", 100f);
+        disconnectedView = findViewById(R.id.DisconnectedView);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(disconnectedView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
     }
@@ -48,6 +48,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         new Handler().postDelayed(() -> {
             CopAlert();
-        }, 5000); // Delay in milliseconds
+        }, 1000);
     }
 }
