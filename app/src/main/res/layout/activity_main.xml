@@ -383,11 +383,11 @@
 
         <ImageView
             android:id="@+id/WelcomeICO"
-            android:layout_width="81dp"
-            android:layout_height="match_parent"
+            android:layout_width="88dp"
+            android:layout_height="73dp"
             android:scaleX="1.4"
             android:scaleY="1.4"
-            app:srcCompat="@mipmap/d3xdmap_foreground" />
+            app:srcCompat="@mipmap/d3xdwelcome_foreground" />
 
         <TextView
             android:id="@+id/WelcomeText"
