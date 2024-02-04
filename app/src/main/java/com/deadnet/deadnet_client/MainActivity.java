@@ -4,9 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -127,13 +133,11 @@ public class MainActivity extends AppCompatActivity {
         reverseAnimator.start();
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loading);
-
-
-
         new Handler().postDelayed(() -> {
             setContentView(R.layout.activity_main);
         }, 5000);
@@ -174,5 +178,26 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             ReconnectedAlert();
         }, 31000);
+
+        /*@SuppressLint({"MissingInflatedId", "LocalSuppress"}) CardView voiceButton = findViewById(R.id.VoiceButton);
+        voiceButton.setOnTouchListener(new View.OnTouchListener() {
+            @SuppressLint("ClickableViewAccessibility")
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                switch (motionEvent.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                        // Start a handler to print "HOLDING" every 100ms
+                        Toast.makeText(MainActivity.this, "HOLDING", Toast.LENGTH_SHORT).show();
+                        break;
+
+                    case MotionEvent.ACTION_UP:
+                        // Stop printing when the touch is released
+                        Toast.makeText(MainActivity.this, "STOPPED HOLDING", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+                return true;
+            }
+        });*/
+
     }
 }
