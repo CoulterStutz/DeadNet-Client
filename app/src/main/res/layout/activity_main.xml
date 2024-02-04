@@ -192,7 +192,9 @@
             android:id="@+id/RoadHazardICO"
             android:layout_width="81dp"
             android:layout_height="match_parent"
-            app:srcCompat="@mipmap/d3xdcop_foreground" />
+            android:scaleX="1.4"
+            android:scaleY="1.4"
+            app:srcCompat="@mipmap/d3xdalert_foreground" />
 
         <TextView
             android:id="@+id/RoadHazardText"
