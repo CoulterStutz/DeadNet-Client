@@ -71,12 +71,12 @@ public class MainActivity extends AppCompatActivity {
         ObjectAnimator animator = ObjectAnimator.ofFloat(disconnectedView, "translationY", 100f);
         animator.setDuration(500); // Adjust the duration as needed
         animator.start();
+    }
 
-        new Handler().postDelayed(() -> {
-            ObjectAnimator reverseAnimator = ObjectAnimator.ofFloat(disconnectedView, "translationY", -300f);
-            reverseAnimator.setDuration(500); // Adjust the duration as needed
-            reverseAnimator.start();
-        }, 2000); // Delay for 2 seconds
+    void ReconnectedAlert(){
+        ObjectAnimator reverseAnimator = ObjectAnimator.ofFloat(disconnectedView, "translationY", -300f);
+        reverseAnimator.setDuration(500); // Adjust the duration as needed
+        reverseAnimator.start();
     }
 
     @Override
@@ -98,5 +98,8 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             DisconnectedAlert();
         }, 13000);
+        new Handler().postDelayed(() -> {
+            ReconnectedAlert();
+        }, 20000);
     }
 }
