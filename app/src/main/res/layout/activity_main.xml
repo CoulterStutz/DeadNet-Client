@@ -171,4 +171,67 @@
             android:translationX="200dp" />
     </androidx.cardview.widget.CardView>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/RoadHazard"
+        android:layout_width="277dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center_horizontal"
+        android:translationY="80dp"
+        app:cardBackgroundColor="@color/d3xdcop_background"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/RoadHazardICO"
+            android:layout_width="81dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/d3xdcop_foreground" />
+
+        <TextView
+            android:id="@+id/RoadHazardText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/glitch_goblin"
+            android:text="Road Hazard"
+            android:textColor="#FF9800"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/RoadHazardLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="Alameda &amp; C470"
+            android:textColor="#FF5722"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/RoadHazardSpeedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed"
+            android:textAlignment="viewStart"
+            android:textColor="#673AB7"
+            android:translationX="210dp" />
+
+        <TextView
+            android:id="@+id/RoadHazardViewSpeed"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/glitch_goblin"
+            android:gravity="center_horizontal"
+            android:shadowColor="#673AB7"
+            android:shadowDx="10"
+            android:shadowRadius="10"
+            android:text="65"
+            android:textSize="34sp"
+            android:translationX="200dp" />
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
