@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|center_vertical"
             android:text="Alameda &amp; C470"
-            android:textColor="#673AB7"
+            android:textColor="#2196F3"
             android:textStyle="bold" />
 
         <TextView
@@ -144,7 +144,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|center_vertical"
             android:text="Alameda &amp; C470"
-            android:textColor="#FF5722"
+            android:textColor="#2196F3"
             android:textStyle="bold" />
 
         <TextView
@@ -207,7 +207,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|center_vertical"
             android:text="Alameda &amp; C470"
-            android:textColor="#FF5722"
+            android:textColor="#2196F3"
             android:textStyle="bold" />
 
         <TextView
@@ -270,7 +270,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|center_vertical"
             android:text="Alameda &amp; C470"
-            android:textColor="#FF5722"
+            android:textColor="#2196F3"
             android:textStyle="bold" />
 
         <TextView
