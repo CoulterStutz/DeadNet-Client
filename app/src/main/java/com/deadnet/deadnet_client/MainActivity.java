@@ -9,7 +9,10 @@ import android.os.Handler;
 import android.widget.ProgressBar;
 
 public class MainActivity extends AppCompatActivity {
+
+    private CardView welcomeAlert;
     private CardView copView;
+    private CardView undercoverCopView;
     private CardView constructionView;
     private CardView hazardView;
     private CardView routeChangeView;
