@@ -3,5 +3,5 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/glitch_goblin"/>
+        android:font="@font/gg"/>
 </font-family>
