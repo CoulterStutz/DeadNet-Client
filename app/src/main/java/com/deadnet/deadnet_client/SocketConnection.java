@@ -37,10 +37,4 @@ public class SocketConnection {
             e.printStackTrace();
         }
     }
-
-    public static void main(String[] args) {
-        // Example usage:
-        SocketConnection socketConnection = new SocketConnection("123456", 5678, "John Doe");
-        socketConnection.connectToServer("127.0.0.1", 8080);
-    }
 }
