@@ -24,8 +24,9 @@ public class SocketConnection {
             // Get the output stream to send data to the server
             ObjectOutputStream outputStream = new ObjectOutputStream(socket.getOutputStream());
 
-            // Send an instance of Socket (this class) to the server
-            outputStream.writeObject(this);
+            // Send the formatted string VIN::RacerPin to the server
+            String formattedData = VIN + "::" + RacerPin;
+            outputStream.writeObject(formattedData);
 
             // Close the output stream
             outputStream.close();
